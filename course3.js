@@ -17,3 +17,59 @@ var diff = function(a, b) {
 };
 
 console.log(diff(4, 3));
+
+
+
+
+
+// var greeting = function() {
+//   alert("Thanks for visiting my studio!\n" +
+//         "I hope your photo session is cool!");
+// };
+
+var greeting;
+var newCustomer = true;
+
+if(newCustomer) {
+  greeting = function() {
+    alert("Welcome to my studio!\n" +
+          "I hope your photo session is cool.");
+  };
+} else {
+  greeting = function() {
+    alert("Welcome back to my studio!\n" +
+          "What can I do for you this time?");
+  };
+}
+
+closeTerminal( greeting );
+function closeTerminal(message) {
+  message();
+}
+
+
+
+
+
+var num = [12, 3, 6, 7, 88, 97, 11, 0];
+var results = num.map(function(i) { return i * 2; });
+
+console.log(results);
+console.log(num);
+
+
+
+
+
+var isHiromi = true;
+// var logo;
+
+// if(isHiromi) {
+//   logo = "Ninja";
+// } else {
+//   logo = "Poop";
+// }
+
+var logo = isHiromi ? "Ninja" : "Poop";
+
+console.log(logo);
