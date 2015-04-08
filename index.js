@@ -104,6 +104,7 @@ function addPassenger(name, list) {
       }
     }
   }
+  return list;
 }
 
 
@@ -115,6 +116,9 @@ passengerList = addPassenger("Whit", passengerList);
 passengerList = addPassenger("Juliet", passengerList);
 passengerList = addPassenger("McLaine", passengerList);
 passengerList = addPassenger("Swarley", passengerList);
+passengerList = deletePassenger("Swarley", passengerList);
+
+console.log(passengerList);
 
 
 
