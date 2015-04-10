@@ -70,6 +70,27 @@ var isHiromi = true;
 //   logo = "Poop";
 // }
 
-var logo = isHiromi ? "Ninja" : "Poop";
+var logo = isHiromi && isNakano ? "Ninja" : "Poop";
+var isNakano = false;
 
-console.log(logo);
+console.log("Current logo: " + logo);
+
+console.log("Current logo: " + (isHiromi && isNakano ? "Ninja" : "Poop"));
+
+
+
+
+
+
+var armory = { addSword: function (sword) {
+                  this.swords = this.swords ? this.swords : [ ];
+                  this.swords.push(sword);
+                }
+             };
+
+
+
+
+var array5 = ["Clinton", "Hiromi", "Miku", "McLaine"];
+array5.splice(2, 0, "Whitney") && array5.splice(5, 0, "Swarley");
+console.log(array5);
